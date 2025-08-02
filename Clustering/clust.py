@@ -7,12 +7,12 @@ import matplotlib.pyplot as plt
 
 data = pd.read_csv("DataSet/bank-full.csv")
 
-# print(f"Data shape is {data.shape[0]} rows and {data.shape[1]} columns")
+print(f"Data shape is {data.shape[0]} rows and {data.shape[1]} columns")
 
-# print(f"check nulls in data {data.isna().sum()}")
+print(f"check nulls in data {data.isna().sum()}")
 
-# print(f"Data info is {data.info()}")
-# print(f"Data colmuns are is {data.columns}")
+print(f"Data info is {data.info()}")
+print(f"Data colmuns are is {data.columns}")
 
 
 Object_Columns = ['job', 'marital', 'education', 'default','housing', 'loan',
@@ -55,5 +55,6 @@ plt.xlabel("No of Clusters")
 plt.ylabel("Intertia / SSD")
 
 plt.plot(dict_interia.keys(), dict_interia.values(), 
-         color='red', marker='o', linestyle='dashed', linewidth=2, markersize=8)
+         color='blue', marker='o', linestyle='dashed', linewidth=2, markersize=8)
 plt.show()
+
